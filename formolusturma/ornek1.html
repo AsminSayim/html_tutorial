@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Oluşturma</title>
+</head>
+<body>
+    <h1>ABC Tasarım Programı Kurulumu Ve Satış Sözleşmesi</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type="checkbox" id="onay" name="onay"
+            value="1">
+            <label for="onay">Aşağıdaki bilgilerin doğruluğunu
+                kabul ediyorum ve sözleşmeyi onaylıyorum </label><br>
+                <input type="submit" id="btnK" name="btnK"
+                value="Formu Kaydet">
+                <input type="reset" id="btnT" name="btnT" value="Formu Temizle">  
+        </fieldset>
+        <fieldset>
+            <legend>Kullanıcı Bilgileri</legend>
+            <table border="1">
+                <tr>
+                    <td>Form Güvenlik ID</td>
+                    <td>
+                        <input type="text" id="gID" name="gID"
+                        value="asfg" disabled>
+                        <input type="hidden" id="gID1"
+                        name="gID1" value="asfg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ad</td>
+                    <td>
+                        <input type="text" name="ad" id="ad"
+                        placeholder="adınızı girin">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Soyad</td>
+                    <td>
+                        <input type="text" name="sad" id="sad"
+                        placeholder="soyadınızı girin">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yaş</td>
+                    <td>
+                        <input type="number" min="20" max="100"
+                        step="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mail</td>
+                    <td>
+                        <input type="email" id="eposta"
+                        name="eposta">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fotoğraf Ekle</td>
+                    <td>
+                        <input type="file" id="dosya" name="dosya">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ürün Şifresi (6 haneli)</td>
+                    <td>
+                        <input type="password" id="sifre"
+                        name="sifre" required maxlength="6">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <table>
+                <tr>
+                    <th colspan="2">
+                        Buradaki alanlar Mesleki Deneyimi Kapsar
+                    </th>
+                </tr>
+                <tr>
+                    <td>Sektöre giriş tarihi</td>
+                    <td>
+                        <input type="date" id="tarih" name="tarih"
+                        value="2024-01-01">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sektör Deneyimi</td>
+                    <td>
+                        <label>
+                            <input type="radio" id="yil1" name="yil"
+                            value="1">1 - 5 yıl
+                        </label><br>
+                        <label>
+                        <input type="radio" id="yil2" name="yil"
+                        value="2">6 - 10 yıl
+                        </label><br>
+                        <label>
+                        <input type="radio" id="yil3" name="yil"
+                        value="2">15 yıl üzeri
+                        </label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Programlama Dilleri</td>
+                    <td>
+                        <select size="5" multiple name="pdil" id="pdil">
+                           <option value="1">C#</option>
+                           <option value="2" selected>PHP</option>
+                           <option value="3">JAVA</option>
+                           <option value="4">JavaScript</option>
+                           <option value="5">Python</option>
+                           <option value="6">Pascal</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea  readonly cols="50" rows="5" name="sozlesme" id="sozlesme">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore eligendi accusantium architecto quo molestiae. Quia, expedita soluta libero praesentium quae quam reprehenderit assumenda aliquid laborum, numquam distinctio et nisi corporis.
+                Sequi laboriosam, molestias repudiandae quia eum incidunt voluptates est error ex, iusto beatae eaque reiciendis veritatis, ut fugiat minima. Harum facere numquam doloremque quaerat itaque! Eligendi illum nostrum aperiam tempore?
+                Voluptatibus omnis rem voluptas, magnam voluptates, animi dolorum, maxime distinctio dolore quidem molestias facere ea fuga numquam ratione minima dignissimos tempore id sunt sequi. Ea pariatur placeat asperiores enim minima.
+                Corrupti, unde soluta veniam facere dolor aliquid quia molestiae sed ut minima optio atque rerum, officiis incidunt praesentium nemo. Delectus eos quis distinctio, iste qui at hic maiores repellendus nam.
+                Blanditiis culpa, vel at dolor magni iste reprehenderit doloribus, sequi molestias, adipisci ducimus amet. Maxime, laborum obcaecati velit distinctio error expedita labore vel, culpa ullam, aut aliquid laudantium sint? Dolores.
+                Soluta esse repellat temporibus velit, quae nostrum quod deserunt fuga. Ea quo ipsa odio eum nesciunt excepturi rerum aperiam voluptas necessitatibus doloremque itaque dignissimos, possimus libero vel molestias minima exercitationem.
+                Delectus minus nam, perspiciatis esse ipsum numquam architecto in totam laborum consequuntur. Vitae error est atque animi architecto dolor a rem, voluptatibus natus, sed harum, odit quam corporis rerum illo!
+                Totam odit, eveniet minus in hic natus dolor. Quae beatae expedita earum voluptatum ipsum, impedit, nisi odio iure rem minima, vero eius. Esse, repudiandae mollitia a facilis quaerat deserunt hic.
+                Maxime repellendus eius fuga soluta rem asperiores molestiae nemo nam omnis assumenda natus, facere dicta adipisci hic possimus nesciunt quasi error iste accusamus! Ratione quam commodi nam porro perspiciatis praesentium?
+                Reiciendis quod obcaecati quo deserunt error, hic maiores, reprehenderit soluta accusantium incidunt nisi dicta corrupti voluptas omnis fugiat cumque? Nisi sint provident beatae nemo libero consequuntur dolorem. Nam, distinctio dignissimos.
+                Soluta, dolorum vel laborum illum quis labore amet minima dolore atque tenetur hic nisi itaque at quidem aspernatur facilis? Incidunt reiciendis odit error, alias eos temporibus velit consequatur unde iure?
+                Sunt minus nesciunt atque, quidem consectetur iste necessitatibus architecto, repellendus modi dolorem deleniti autem totam, velit ipsum corrupti eius ratione dicta! Veritatis atque perferendis assumenda, praesentium laboriosam voluptatibus iusto alias?
+                Nisi nobis obcaecati enim esse itaque rerum ea doloremque deleniti, perferendis, expedita odio quisquam. Corrupti temporibus ipsum optio dolores commodi praesentium, sint provident. Enim distinctio aut facilis laudantium velit placeat.
+                Expedita quasi provident pariatur quibusdam voluptas, non facilis delectus vitae autem dolor recusandae nostrum vel error repudiandae dicta. Eligendi fuga neque repudiandae. Voluptate neque sapiente eligendi totam aperiam architecto excepturi!
+                Dolore similique eius officia minus voluptate laboriosam nobis ipsa, impedit voluptates mollitia dolores corrupti asperiores quibusdam debitis blanditiis temporibus consequuntur, ab rerum repellendus deserunt. Iste, vel error. Dolorum, maxime quaerat.
+                Earum voluptatem vitae delectus nobis pariatur ad possimus deserunt laudantium corrupti repellendus? Quia commodi accusamus ipsa sequi, hic, aut a quasi ipsam omnis alias qui nobis beatae consequatur repellat error.
+                Obcaecati corrupti illo culpa aut mollitia placeat praesentium odit eveniet? Cupiditate reiciendis distinctio et harum possimus doloribus in, cumque praesentium numquam debitis. Enim odit excepturi praesentium voluptatibus unde quasi natus?
+                Numquam, rem. In placeat ratione mollitia quia, enim atque quisquam, reprehenderit quaerat error eveniet dignissimos numquam exercitationem vero sint. Earum, cum pariatur incidunt consequuntur officiis similique praesentium totam debitis voluptatibus.
+                Labore quibusdam iure voluptatem pariatur ut nostrum adipisci? Doloremque rem dolorum corporis soluta animi voluptas autem ipsam, totam accusantium alias beatae sunt voluptatum, possimus cupiditate vel numquam provident quidem itaque.
+                Ab harum debitis et reiciendis consequuntur dolore ipsam non fugit adipisci ea tenetur corporis quis animi eligendi voluptate optio magni, numquam ducimus doloremque recusandae deleniti. Cum neque corrupti deserunt! Unde.
+                Architecto cum corrupti rem minima? Rerum impedit sint laborum distinctio delectus autem sequi repellat amet debitis, corrupti vitae eaque officiis assumenda repellendus obcaecati. Necessitatibus sit neque nulla modi debitis illum!
+                Consequuntur eos architecto explicabo recusandae labore, quam at laboriosam repellat, minima accusamus doloribus qui libero distinctio suscipit ipsum beatae numquam voluptas perferendis amet quod esse hic mollitia consectetur. Dolor, unde.
+                Sunt provident veritatis nisi numquam id aliquid, labore voluptatem, cumque non iure libero? Maiores quis voluptatibus, reprehenderit consequatur modi cupiditate eveniet architecto quibusdam maxime autem? Id architecto doloribus ad sapiente?
+                Vel totam praesentium ad, adipisci animi eos. Consequuntur deserunt ad, qui ut minus placeat tempore. Ut reprehenderit adipisci voluptatibus laboriosam dolores. Iure cumque consectetur minima eligendi vero non dolor voluptatibus!
+                Pariatur nulla maxime amet eius ad, numquam eligendi officia, nesciunt earum libero doloremque? Libero minus veniam adipisci quasi voluptatibus, officia, iste vel quae saepe doloremque molestiae facilis reiciendis natus accusamus.
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            Mail listesine katılmak <b>istiyorum</b>
+            <input type="radio" id="mliste" name="mliste"
+            checked> <br>
+            Mail listesine katılmak <b><u>istemiyorum</u></b>
+            <input type="radio" id="mlistel" name="mliste">
+        </fieldset>
+    </form>
+</body>
+</html>
