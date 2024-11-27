@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayim</title>
+</head>
+<body>
+    <h1>ADIM SOYADIM</h1>
+
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Adım Soyadım</legend>
+            
+            <label for="anahtar">Güvenlik Anahtarı:</label><br>
+            <input type="text" id="anahtar" name="anahtar" value="6534876438276432897" disabled ><br><br>
+
+            <label for="eposta">Eposta:</label><br>
+            <input type="email" id="eposta" name="eposta" placeholder="Örn:admin@gmail.com" required autocomplete="email"><br><br>
+
+            <label for="dtarih">Doğum Tarihi</label><br>
+            <input type="date" name="dtarih" id="dtarih" min="2000-01-01" max="2010-12-31"><br><br>
+
+            <label for="sifre">Şifre</label><br>
+            <input type="password" name="sifre" id="sifre"  maxlength="8" required><br><br>
+
+            <label for="avatar">Avatar Seçimi</label><br>
+            <select name="avatar" id="avatar">
+                <option>Dory</option>
+                <option>Nemo</option>
+                <option>Moana</option>
+                <option>Rango</option>
+            </select><br><br>
+           
+        </fieldset>
+         
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+    </form>
+
+</body>
+</html>
