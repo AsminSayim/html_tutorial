@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müşteri Kayıt Formu</title>
+</head>
+<body>
+    <h1>Müşteri Kayıt Formu</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <!-- Kişisel Bilgiler -->
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="adSoyad">Ad Soyad:</label><br>
+            <input type="text" id="adSoyad" name="adSoyad" required><br><br>
+
+            <label for="dogumTarihi">Doğum Tarihi:</label><br>
+            <input type="date" id="dogumTarihi" name="dogumTarihi" value="2000-01-01"><br><br>
+
+            <label for="maasBeklentisi">Maaş Beklentiniz:</label><br>
+            <input type="number" id="maasBeklentisi" name="maasBeklentisi" min="20000" max="60000" step="1000"><br><br>
+
+            <label for="ders">En sevdiğiniz ders:</label><br>
+            <input type="text" id="ders" name="ders" list="sevdiginizders"><br><br>
+            
+        <datalist id="sevdiginizders">
+        <option value="WEB">
+        <option value="YAPAY ZEKA">
+        <option value="MOBİL">
+        <option value="GRAFİK">
+       </datalist>
+  
+        </fieldset>
+        <br>
+
+        <!-- Üyelik Bilgileri -->
+        <fieldset>
+            <legend>Üyelik Bilgileri</legend>
+            <label for="kullaniciAdi">Kullanıcı adı:</label><br>
+            <input type="text" id="kullaniciAdi" name="kullaniciAdi" required><br><br>
+
+            <label for="email">E-Posta:</label><br>
+            <input type="email" id="email" name="email" placeholder="ornek@yazilim11.com" required><br><br>
+
+            <label for="sifre">Şifre:</label><br>
+            <input type="password" id="sifre" name="sifre" minlength="8" placeholder="En az 8 karakter olmalıdır" required><br><br>
+        </fieldset>
+        <br>
+
+        <!-- Üyelik Sözleşmesi -->
+        <fieldset>
+            <legend>Üyelik Sözleşmesi</legend>
+            <textarea rows="5" cols="50" readonly>
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Natus fugiat suscipit cupiditate architecto tempora dolores nulla.
+            </textarea>
+        </fieldset>
+        <br>
+
+        <!-- Butonlar -->
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+    </form>
+</body>
+</html>
